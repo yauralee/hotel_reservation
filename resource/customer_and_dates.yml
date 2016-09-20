@@ -1,17 +1,17 @@
 case1 :
-  customer : Regular
+  customer : regular
   dates :
     16Mar2009 : mon
     17Mar2009 : tues
     18Mar2009 : wed
 case2 :
-  customer : Regular
+  customer : regular
   dates :
     20Mar2009 : fri
     21Mar2009 : sat
     22Mar2009 : sun
 case3 :
-  customer : Rewards
+  customer : rewards
   dates :
     26Mar2009 : thur
     27Mar2009 : fri

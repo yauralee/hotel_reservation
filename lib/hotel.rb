@@ -1,12 +1,8 @@
 class Hotel
-  attr_accessor :rating, :regular_weekday_rates, :regular_weekend_rates, :rewards_weekday_rates, :rewards_weekend_rates
-  # @rating
-  # @regular_weekday_rates
-  # @regular_weekend_rates
-  # @rewards_weekday_rates
-  # @rewards_weekend_rates
+  attr_accessor :name, :rating, :regular_weekday_rates, :regular_weekend_rates, :rewards_weekday_rates, :rewards_weekend_rates
 
-  def initialize(hotel_info)
+  def initialize(hotel_name, hotel_info)
+    @name = hotel_name
     @rating = hotel_info['rating']
     @regular_weekday_rates = hotel_info['regularCustomer']['weekdayRates']
     @regular_weekend_rates = hotel_info['regularCustomer']['weekendRates']

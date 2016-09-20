@@ -7,8 +7,8 @@ RSpec.describe Hotel do
   describe '#initialize' do
     context 'with hotel rates' do
       it 'should return an instance of hotel' do
-        certain_hotel = hotels['Lakewood']
-        hotel = Hotel.new(certain_hotel)
+        hotel = Hotel.new(hotels.keys[0], hotels.values[0])
+        expect(hotel.name).to eq(hotels.keys[0])
         expect(hotel.rating).to eq(3)
         expect(hotel.regular_weekday_rates).to be(110)
         expect(hotel.regular_weekend_rates).to be(90)
