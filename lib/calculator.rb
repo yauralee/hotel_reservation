@@ -1,5 +1,13 @@
 class Calculator
 
+  def reservation_for_cases(requirement_cases, hotels)
+    results = []
+    requirement_cases.each do |requirement_case|
+      results << reservation(requirement_case, hotels)
+    end
+    results
+  end
+
   def reservation(requirement_case, hotels)
     customer_type = requirement_case.customer_type
     weekday_number = requirement_case.weekday_number
