@@ -17,9 +17,9 @@ RSpec.describe InputParser, type: :parser do
     context 'with customer and dates cases' do
       it 'should return parsed requirement information for reservation' do
         file_name = 'resource/customer_and_dates.yml'
-        customer_and_dates = {"case1" => {"customer"=>"Regular", "dates"=>[{"16Mar2009"=>"mon"}, {"17Mar2009"=>"tues"}, {"18Mar2009"=>"wed"}]},
-                              "case2" => {"customer"=>"Regular", "dates"=>[{"20Mar2009"=>"fri"}, {"21Mar2009"=>"sat"}, {"22Mar2009"=>"sun"}]},
-                              "case3" => {"customer"=>"Rewards", "dates"=>[{"26Mar2009"=>"thur"}, {"27Mar2009"=>"fri"}, {"28Mar2009"=>"sat"}]},
+        customer_and_dates = {"case1" => {"customer"=>"Regular", "dates"=>{"16Mar2009"=>"mon", "17Mar2009"=>"tues", "18Mar2009"=>"wed"}},
+                              "case2" => {"customer"=>"Regular", "dates"=>{"20Mar2009"=>"fri", "21Mar2009"=>"sat", "22Mar2009"=>"sun"}},
+                              "case3" => {"customer"=>"Rewards", "dates"=>{"26Mar2009"=>"thur", "27Mar2009"=>"fri", "28Mar2009"=>"sat"}},
         }
         expect(input_parser.yaml_parser(file_name)).to eq(customer_and_dates)
       end
