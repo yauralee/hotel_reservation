@@ -1,0 +1,26 @@
+Lakewood :
+   rating : 3
+   regularCustomer :
+      weekdayRates : 110
+      weekendRates : 90
+   rewardsCustomer :
+      weekdayRates : 80
+      weekendRates : 80
+Bridgewood :
+   rating : 4
+   regularCustomer :
+      weekdayRates : 160
+      weekendRates : 60
+   rewardsCustomer :
+      weekdayRates : 110
+      weekendRates : 50
+Ridgewood :
+   rating : 5
+   regularCustomer :
+      weekdayRates : 220
+      weekendRates : 150
+   rewardsCustomer :
+      weekdayRates : 100
+      weekendRates : 40
+
+
